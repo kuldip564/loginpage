@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+    background: linear-gradient(rgb(92, 92, 92),rgb(164, 152, 152));
+}
+
+.logo{
+    background: linear-gradient(rgb(36, 36, 36),rgb(0, 0, 0));
+    color: aliceblue;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-left: 20px;
+}
+
+header ul{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+header ul li{
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+header ul li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: rgb(12, 12, 12);
+    position: absolute;
+    left: 0;
+    top: 19px;
+    transition: 0.5s;
+}
+
+header ul li:hover::after {
+    width: 100%;
+    border-radius: 20px;
+    background: rgb(32, 32, 32);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 93vh;
+    background: linear-gradient(rgb(77, 77, 77),rgb(140, 125, 125));
+
+}
+
+.loginpage{
+    width: 70vw;
+    height: 80vh;
+    background: rgb(71, 71, 71);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: black 8px 1px 15px -6px;
+}
+.left{
+    width: 38vw;
+    height: 80vh;
+    background: rgb(1, 1, 1);
+    color: antiquewhite;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+
+}
+
+.right{
+    width: 38vw;
+    height: 80vh;
+    background: linear-gradient(rgba(30, 29, 29, 0.75),rgba(19, 19, 19, 0.75)),url(./img/pexels-bogdan-dirica-532600-1645668.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.left div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20vh;
+}
+
+.left input{
+    width: 20vw;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 13px;
+}
+
+.but{ 
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 13px;
+    box-shadow: inset 0 0 0 rgb(42, 145, 179);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: black;
+    border: 1px solid white;
+    color: aqua;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+    position: relative;
+}
+
+
+ .but:hover{
+    box-shadow: inset 200px 220px 2px 1px rgb(42, 179, 177);
+    border: 1px solid #f0f0f0;
+    filter: brightness(1.4);
+    width: 25%;
+    background: aqua;
+    color: black;
+} 
+
+
+
+
+.left p{
+    font-size: 16px;
+    position: relative;
+    left: 8vw;
+    text-transform: lowercase;
+    top: 1vh;
+    text-decoration: underline;
+    color: rgb(93, 133, 133);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.left p:hover{
+    color: aqua;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#sign{
+    display: none;
+}
